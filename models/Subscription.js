@@ -16,7 +16,16 @@ const PlanSchema = mongoose.Schema(
         price:{
             type:String,
             required:true
+        },
+        time:{
+            type:String,
+            required:true
+        },
+        date:{
+            type:Date,
+            default:Date.now()
         }
+
     }
 )
 module.exports = mongoose.model('plan',PlanSchema);

@@ -41,7 +41,9 @@ router.post('/addplan',fetchuser,async (request,response)=>{
                 user:request.user.id,
                 plantype:request.body.plantype,
                 hardware:request.body.hardware,
-                price:request.body.price
+                price:request.body.price,
+                time:request.body.time,
+                date:Date.now()
             }
         )
         success = 1;
